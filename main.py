@@ -30,14 +30,14 @@ class proxy_system:
         # label_bg.place(x=0,y=0,width = 1530, height = 710)
         
         # Background Image 2nd Method
-        backimage = Image.open(r"Icons and Images\background2.jpg")
+        backimage = Image.open(r"Icons and Images\background.jpg")
         backimage = backimage.resize((1530,710),Image.ANTIALIAS)
         self.backimages = ImageTk.PhotoImage(backimage)
         
         canvas1= Canvas(root,width = 1530,height = 710,bg="black")
         canvas1.pack(fill="both",expand= True,)
         canvas1.create_image(0,0,image=self.backimages,anchor = "nw")
-        canvas1.create_text(700,25,text="The Proxy Buster",font=("Castellar",35,"bold"))
+        canvas1.create_text(700,25,text="The Proxy Buster",font=("consolas",35,"bold"))
         
         # Title for the Window 
         # title_label = Label(label_bg,text = "Anti-Proxy",font=("times new roman", 35,"bold"))
@@ -64,11 +64,11 @@ class proxy_system:
         self.button_image2 = ImageTk.PhotoImage(button2_image)
         
         button2 = Button(canvas1,image=self.button_image2,cursor="hand2")
-        button2.place(x=500,y=100,width=220,height=220)
+        button2.place(x=550,y=100,width=220,height=220)
         
         #For Creating Text Buttons
         button2_text = Button(canvas1,text="Face Detection",cursor="hand2",font=("times new roman",15,"bold"))
-        button2_text.place(x=500,y=300,width=220,height=40)
+        button2_text.place(x=550,y=300,width=220,height=40)
         ######################################################################
         
         # Button3 Attendance
@@ -77,24 +77,24 @@ class proxy_system:
         self.button_image3 = ImageTk.PhotoImage(button3_image)
         
         button3 = Button(canvas1,image=self.button_image3,cursor="hand2")
-        button3.place(x=800,y=100,width=220,height=220)
+        button3.place(x=900,y=100,width=220,height=220)
         
         #For Creating Text Buttons
         button3_text = Button(canvas1,text="Attendance",cursor="hand2",font=("times new roman",15,"bold"))
-        button3_text.place(x=800,y=300,width=220,height=40)
+        button3_text.place(x=900,y=300,width=220,height=40)
         ######################################################################
         
         # Button4 Support
-        button4_image = Image.open(r"Icons and Images\support.jpg")
-        button4_image = button4_image.resize((220,220),Image.ANTIALIAS)
-        self.button_image4 = ImageTk.PhotoImage(button4_image)
+        # button4_image = Image.open(r"Icons and Images\support.jpg")
+        # button4_image = button4_image.resize((220,220),Image.ANTIALIAS)
+        # self.button_image4 = ImageTk.PhotoImage(button4_image)
         
-        button4 = Button(canvas1,image=self.button_image4,cursor="hand2")
-        button4.place(x=1100,y=100,width=220,height=220)
+        # button4 = Button(canvas1,image=self.button_image4,cursor="hand2")
+        # button4.place(x=1100,y=100,width=220,height=220)
         
-        #For Creating Text Buttons
-        button4_text = Button(canvas1,text="Support",cursor="hand2",font=("times new roman",15,"bold"))
-        button4_text.place(x=1100,y=300,width=220,height=40)
+        # #For Creating Text Buttons
+        # button4_text = Button(canvas1,text="Support",cursor="hand2",font=("times new roman",15,"bold"))
+        # button4_text.place(x=1100,y=300,width=220,height=40)
         
         ####################################################################################################
         #Button 5 Train Data 
@@ -102,25 +102,25 @@ class proxy_system:
         button5_image = button5_image.resize((220,220),Image.ANTIALIAS)
         self.button_image5 = ImageTk.PhotoImage(button5_image)
         
-        button5 = Button(canvas1,image=self.button_image5,cursor="hand2")
-        button5.place(x=200,y=400,width=220,height=220)
+        button5 = Button(canvas1,image=self.button_image5,cursor="hand2",border=0)
+        button5.place(x=550,y=400,width=220,height=220)
         
         #For Creating Text Buttons
-        button5_text = Button(canvas1,text="Train Data",cursor="hand2",font=("times new roman",15,"bold"))
-        button5_text.place(x=200,y=600,width=220,height=40)
+        button5_text = Button(canvas1,text="Train Data",cursor="hand2",border=0,activebackground="red",font=("times new roman",15,"bold"))
+        button5_text.place(x=550,y=600,width=220,height=40)
         
         ######################################################################
         # Button 6 Exit
-        button6_image = Image.open(r"Icons and Images\exit.jpg")
-        button6_image = button6_image.resize((220,220),Image.ANTIALIAS)
-        self.button_image6 = ImageTk.PhotoImage(button6_image)
+        # button6_image = Image.open(r"Icons and Images\exit.jpg")
+        # button6_image = button6_image.resize((220,220),Image.ANTIALIAS)
+        # self.button_image6 = ImageTk.PhotoImage(button6_image)
         
-        button6 = Button(canvas1,image=self.button_image6,cursor="hand2")
-        button6.place(x=500,y=400,width=220,height=220)
+        # button6 = Button(canvas1,image=self.button_image6,cursor="hand2")
+        # button6.place(x=500,y=400,width=220,height=220)
         
-        #For Creating Text Buttons
-        button6_text = Button(canvas1,text="Exit",cursor="hand2",font=("times new roman",15,"bold"))
-        button6_text.place(x=500,y=600,width=220,height=40)
+        # #For Creating Text Buttons
+        # button6_text = Button(canvas1,text="Exit",cursor="hand2",font=("times new roman",15,"bold"))
+        # button6_text.place(x=500,y=600,width=220,height=40)
         ######################################################################
         
         
