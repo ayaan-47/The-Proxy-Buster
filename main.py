@@ -1,4 +1,5 @@
-from tkinter import * # Library for Importing GUI Application in Python 
+from tkinter import *
+from turtle import color # Library for Importing GUI Application in Python 
 from PIL import Image,ImageTk # Pillow library for working with Images in Python
 
 class proxy_system:
@@ -8,7 +9,7 @@ class proxy_system:
         
         self.root = root
         self.root.geometry("1530x710+0+0") # To set up the Window Geometry 
-        self.root.title("Anti-Proxy") # Sets up the Title for our Gui Window
+        self.root.title("The Proxy Buster") # Sets up the Title for our Gui Window
         #Adding transparent background property
  #      root.wm_attributes('-transparentcolor', '#ab23ff') # For Making transparent 
         # # First Image
@@ -29,14 +30,14 @@ class proxy_system:
         # label_bg.place(x=0,y=0,width = 1530, height = 710)
         
         # Background Image 2nd Method
-        backimage = Image.open(r"Icons and Images\background.jpg")
+        backimage = Image.open(r"Icons and Images\background2.jpg")
         backimage = backimage.resize((1530,710),Image.ANTIALIAS)
         self.backimages = ImageTk.PhotoImage(backimage)
         
-        canvas1= Canvas(root,width = 1530,height = 710)
-        canvas1.pack(fill="both",expand= True)
+        canvas1= Canvas(root,width = 1530,height = 710,bg="black")
+        canvas1.pack(fill="both",expand= True,)
         canvas1.create_image(0,0,image=self.backimages,anchor = "nw")
-        canvas1.create_text(700,25,text="Anti Proxy",font=("times new roman",35,"bold"))
+        canvas1.create_text(700,25,text="The Proxy Buster",font=("Castellar",35,"bold"))
         
         # Title for the Window 
         # title_label = Label(label_bg,text = "Anti-Proxy",font=("times new roman", 35,"bold"))
