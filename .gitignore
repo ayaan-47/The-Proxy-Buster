@@ -1,7 +1,9 @@
 data/
 trainer/
 testing_data/
-eigenfaces
+eigenfaces/
 *pkl
 *npz
 *sav
+FiveCelebPhotos/
+proxy/
